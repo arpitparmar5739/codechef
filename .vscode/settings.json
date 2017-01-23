@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_112",
-    "java.errors.incompleteClasspath.severity": "ignore"
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_121",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.codeLens": false
 }
