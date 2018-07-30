@@ -38,7 +38,7 @@ public class Main {
         }
     }
 
-    public void merge(int a[] ,int l, int mid, int h) {
+    public void merge(int a[] ,int l, int mid, int high) {
         int i=l , j=mid+1,temp;
         while(i<=mid && j<=high) {
             if(a[i]>a[j]) {
