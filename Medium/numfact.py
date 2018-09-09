@@ -1,12 +1,14 @@
 from collections import defaultdict
- 
+
+
 def prime_sieve(n):
     sieve = [True] * n
     for i in range(3, int(n ** 0.5) + 1, 2):
         if sieve[i]:
             sieve[i * i::2 * i] = [False] * ((n - i * i - 1) // (2 * i) + 1)
     return [2] + [i for i in range(3, n, 2) if sieve[i]]
- 
+
+
 print(prime_sieve(100))
 # def fws(n):
 #     for p in primes:
@@ -17,7 +19,7 @@ print(prime_sieve(100))
 #         while not n % p:
 #             d[p] += 1
 #             n //= p
-#  
+#
 # primes = prime_sieve(1200)
 # for t in range(int(input())):
 #     n = int(input())
